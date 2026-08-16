@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome</title>
+<style>
+  html,body { height:100%; margin:0; }
+  body {
+    display:grid;
+    place-items:center;
+    background: radial-gradient(circle at top, #10254d, #020611 70%);
+    color:white;
+    font-family: Georgia, serif;
+    text-align:center;
+  }
+  .content {
+    padding:40px;
+    animation: fade .9s ease;
+  }
+  h1 {
+    font-size:clamp(42px,8vw,82px);
+    font-weight:normal;
+    margin:0 0 15px;
+    text-shadow:0 0 25px rgba(160,200,255,.7);
+  }
+  p { font-size:20px; opacity:.8; }
+  @keyframes fade { from {opacity:0; transform:translateY(15px)} to {opacity:1; transform:none} }
+</style>
+</head>
+<body>
+  <main class="content">
+    <h1>Welcome ✨</h1>
+    <p>You found the way through the stars.</p>
+  </main>
+</body>
+</html>
