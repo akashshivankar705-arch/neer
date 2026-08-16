@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,48 +22,40 @@
 
   .login {
     position: absolute;
-    top: 24%;
+    top: 33.2%;
     left: 50%;
     transform: translateX(-50%);
-    width: min(760px, 82vw);
+    width: min(650px, 86vw);
+    height: 76px;
     display: flex;
     align-items: center;
-    padding: 8px 12px 8px 20px;
-    border: 1px solid rgba(150, 195, 255, .45);
-    border-radius: 28px;
-    background: rgba(5, 12, 30, .28);
-    backdrop-filter: blur(4px);
-    box-shadow: 0 0 22px rgba(80, 150, 255, .20);
+    background: transparent;
+    border: 0;
+    box-shadow: none;
   }
-
-  .icon { font-size: 25px; opacity: .9; margin-right: 14px; }
 
   input {
     flex: 1;
     min-width: 0;
+    height: 100%;
     border: 0;
     outline: 0;
     background: transparent;
-    color: white;
-    font: italic 24px Georgia, serif;
+    color: transparent;
+    caret-color: white;
+    font-size: 20px;
+    padding: 0 62px;
   }
 
-  input::placeholder { color: rgba(255,255,255,.78); }
+  input::placeholder { color: transparent; }
 
   button {
+    width: 62px;
+    height: 100%;
     border: 0;
-    border-left: 1px solid rgba(180,210,255,.30);
     background: transparent;
-    color: white;
-    font-size: 28px;
-    padding: 6px 12px 6px 18px;
+    color: transparent;
     cursor: pointer;
-    transition: transform .2s, text-shadow .2s;
-  }
-
-  button:hover {
-    transform: scale(1.12);
-    text-shadow: 0 0 12px #9ecbff;
   }
 
   .error {
@@ -86,11 +79,9 @@
 <body>
 <div class="overlay"></div>
 
-<form class="login" id="loginForm">
-  <span class="icon">⌕</span>
-  <input id="password" type="password" autocomplete="off"
-         placeholder="knock knock who's there" aria-label="Password">
-  <button type="submit" aria-label="Enter">☆</button>
+<form class="login" id="loginForm" aria-label="Password entry">
+  <input id="password" type="password" autocomplete="off" aria-label="Password">
+  <button type="submit" aria-label="Enter"></button>
 </form>
 
 <div class="error" id="error">The stars don't recognize that password.</div>
